@@ -10,11 +10,12 @@
 <button id = "test" style="height:50px;width:100px;"> getAuthCode </button>
 <script>
  document.querySelector('#test').addEventListener('click',function(){
-  console.log('22222');
+  console.log('33333');
     ap.getAuthCode ({
-      appId :  '2021003126638123' ,
+      appId :  '2021003126638123',
       scopes : ['auth_user'],
    },function(res){
+     console.log(JSON.stringify(res));
       ap.alert (JSON.stringify(res));
    });
 });
