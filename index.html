@@ -5,9 +5,19 @@
 <meta charset="utf-8">
 <title>文档标题</title>
 </head>
- 
 <body>
-文档内容......
+<script src = "https://gw.alipayobjects.com/as/g/h5-lib/alipayjsapi/3.1.1/alipayjsapi.min.js"> </script> 
+<button id = "test"> getAuthCode </button>
+<script>
+ document.querySelector('#test').addEventListener('click',function(){
+    ap.getAuthCode ({
+      appId :  '${appId}' ,
+      scopes : ['auth_user'],
+   },function(res){
+      ap.alert (JSON.stringify(res));
+   });
+});
+</script>
 </body>
  
 </html>
