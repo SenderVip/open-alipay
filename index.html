@@ -10,6 +10,7 @@
 <button id = "test"> getAuthCode </button>
 <script>
  document.querySelector('#test').addEventListener('click',function(){
+  console.log('22222');
     ap.getAuthCode ({
       appId :  '${appId}' ,
       scopes : ['auth_user'],
