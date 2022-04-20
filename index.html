@@ -3,19 +3,18 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>文档标题</title>
+<title>授权Test</title>
 </head>
 <body>
 <script src = "https://gw.alipayobjects.com/as/g/h5-lib/alipayjsapi/3.1.1/alipayjsapi.min.js"> </script> 
-<button id = "test" style="height:50px;width:100px;"> getAuthCode </button>
+<button id = "test" style="height:100px;width:200px;"> getAuthCode </button>
 <script>
  document.querySelector('#test').addEventListener('click',function(){
-  console.log('33333');
+  console.log('test======');
     ap.getAuthCode ({
-      appId :  'appid',
+      appId :  '2021003126638123',
       scopes : ['auth_user'],
    },function(res){
-     console.log(JSON.stringify(res));
       ap.alert (JSON.stringify(res));
    });
 });
